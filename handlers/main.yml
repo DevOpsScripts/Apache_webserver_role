@@ -1,0 +1,8 @@
+---
+# handlers file for Apache
+
+ - name: restart_apache_redhat
+   service: name=httpd state=restarted
+
+ - name: restart_apache_ubuntu
+   service: name=apache2 state=restarted 

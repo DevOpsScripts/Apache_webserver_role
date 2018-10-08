@@ -1,0 +1,6 @@
+---
+ 
+ - name: copy the file to the destination path on Ubuntu server
+   copy: src=/etc/ansible/roles/Apache/files/index.html dest=/var/www/html/ owner=root group=root mode=0755
+   notify: restart_apache_ubuntu
+    
